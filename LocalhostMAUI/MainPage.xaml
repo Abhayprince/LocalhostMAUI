@@ -22,6 +22,7 @@
                 HorizontalOptions="Center" />
 
             <Label
+                x:Name="apiResponse"
                 Text="Welcome to .NET Multi-platform App UI"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
@@ -30,9 +31,15 @@
 
             <Button
                 x:Name="CounterBtn"
-                Text="Call Api"
+                Text="Call Localhost Api - HTTP"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCallApiBtnClicked"
+                HorizontalOptions="Center" />
+            
+            <Button 
+                Text="Call Localhost Api - HTTPS"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCallHttpsApiBtnClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

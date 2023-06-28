@@ -52,4 +52,10 @@
 	  <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Platforms\iOS\HttpClientService.cs">
+	    <ExcludeFromCurrentConfiguration>false</ExcludeFromCurrentConfiguration>
+	  </Compile>
+	</ItemGroup>
+
 </Project>
